@@ -1,0 +1,27 @@
+[
+   {
+      "name":"Sandisk 128 gb",
+      "price":"180.00",
+      "description":"Sandisk 128 gb",
+      "ratings":"4.5",
+      "image":[
+         {
+            "public_id":"abcdefghijklmnopqrstuvwxyz",
+            "url":"https://images-eds-ssl.xboxlive.com/image/upload/sha256/bafybe/b6d6d6d6d6d6d6d6d6d"
+         }
+      ],
+      "categories":"Accessories",
+      "seller":"support@sandisk.com",
+      "stock":5,
+      "numOfReviews":1,
+      "reviews":[
+         {
+            "name":"Argha Ghosh",
+            "comments":"Very Good",
+            "rating":4
+         }
+      ],
+      "created_at":"2022-08-29T00:00:00"
+
+   }
+]
