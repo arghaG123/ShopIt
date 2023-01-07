@@ -29,6 +29,15 @@ class APIFeatures {
       return this;
    }
 
+   pagination(productPerPage){
+      const currentPage = Number(this.queryStr.page) || 1;
+      const skip = productPerPage * (currentPage -1);
+
+      this.query = this.query.limit(productPerPage).skip(skip);
+
+      return this;
+   }
+
 }
 
 module.exports = APIFeatures;

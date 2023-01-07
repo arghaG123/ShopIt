@@ -12,13 +12,17 @@ exports.newProduct = catchAsyncErrors (async (req, res, next) => {
 });
 // Get all products from the database => /api/v1/admin/products?keyword=apple
 exports.getProducts = catchAsyncErrors (async(req,res,next) => {
+   const productPerPage = 1;
+   const productCount = await Product.countDocuments();
    const apiFeatures = new APIFeatures(Product.find(),req.query)
                            .search()
-                           .filters();
+                           .filters()
+                           .pagination(productPerPage);
    const products = await apiFeatures.query;
    return res.status(200).json({
       success:true,
       count:products.length,
+      productCount,
       products
    })
 });
