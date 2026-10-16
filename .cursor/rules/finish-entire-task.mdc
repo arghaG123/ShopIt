@@ -1,0 +1,11 @@
+---
+description: Complete the full request end-to-end; never stop at self-chosen milestones.
+alwaysApply: true
+---
+
+# Finish the entire request in one run
+
+- Treat multi-part / long tasks as one job. Do not stop after phase 1, a "milestone," a partial PR, or a "next steps?" pause.
+- Never invent checkpoints that need approval unless the user asked for approval, the action is destructive/irreversible, or a required secret/credential is missing.
+- Keep going until every explicit acceptance criterion is done (implement, test, commit/PR if that was asked). Only then summarize.
+- If the request lists several items, finish all of them before the final reply. Partial completion is a failure unless blocked.
